@@ -1,26 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+//components
+import Navbar from './Component/Navbar/Navbar';
+import NavbarMail from './Component/Navbar/NavbarMail';
+import Description from './Component/Description/Description';
+import Aboutme from './Component/Aboutme/Aboutme';
+import Worked from './Component/Work/Worked';
 
-function App() {
+//themes
+import { theme } from './Themeconfig/ThemeConfig';
+import { ThemeProvider } from '@mui/system';
+//components mui 5v
+import {Grid} from '@mui/material';
+import Footer from './Component/Footer/Footer';
+import Project from './Component/Project/Project';
+
+
+const App  = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <ThemeProvider theme={theme}>
+      <Grid container sx={{flexDirection : 'row' , justifyContent : 'space-between' , position:'fixed'}}>
+      <Navbar />
+      <NavbarMail />
+      </Grid>
+        <Description/>
+        <Aboutme/>
+        {/* <Worked/> */}
+        {/* <Project/> */}
+        <Footer/>
+    </ThemeProvider>
+    );
 }
-
 export default App;
+
