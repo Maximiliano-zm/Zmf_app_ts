@@ -11,6 +11,8 @@ import { ReactComponent as IconNodeJs } from '../../Img/nodejs.svg';
 import { ReactComponent as IconReact } from '../../Img/react.svg';
 import { ReactComponent as IconStyled } from '../../Img/styled.svg';
 import { ReactComponent as IconTypeScript } from '../../Img/typescript.svg';
+import { ReactComponent as IconGit } from '../../Img/git-icon.svg';
+import { ReactComponent as IconGitHub } from '../../Img/Github.svg';
 const propIcons = {
     height: 50,
     width : 50    
@@ -34,7 +36,8 @@ const iconsBack  = {
   };
   const iconsOther  = {
     '14': <IconDocker {...propIcons}/>,
-    '15': <IconDocker {...propIcons}/>
+    '15': <IconGit {...propIcons}/>,
+    '16': <IconGitHub {...propIcons}/>
   };
   const IconsCategories = ({id} : {id : string}) => {
     return <>

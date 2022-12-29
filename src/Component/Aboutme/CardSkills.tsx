@@ -21,8 +21,8 @@ const CardSkills = () => {
             ],
             others : [
                 {id : '14', text : 'Docker'},
-                {id : '14', text : 'Git'},
-                {id : '14', text : 'Github'}
+                {id : '15', text : 'Git'},
+                {id : '16', text : 'Github'}
             ]
         }
     return (

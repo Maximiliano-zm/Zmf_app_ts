@@ -16,7 +16,7 @@ const Description = () => {
                     <LooksOneIcon color='primary'/> About me:
                 </Typography>
                 <Typography variant='body1' color='secondary'>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Como Desarrollador me encuentro constante aprendizaje.
                 </Typography>
                 <Typography variant='body1' color='secondary'>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
